@@ -1,0 +1,19 @@
+{
+  "name": "visvol",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rinebob/visvol-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rinebob/visvol-js/issues"
+  },
+  "homepage": "https://github.com/rinebob/visvol-js#readme"
+}
