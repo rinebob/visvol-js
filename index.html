@@ -3,22 +3,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
     <header>
+        <h2 class="title-text">VisVol-js</h2>
        
     </header>
     <main>
         <div class="toolbar">
+            <form action="#" id="tickerForm">
+                <div class="ticker control">
+                    <legend>Ticker symbol</legend>
+                    <input type="text" class="ticker form-control" name="ticker">
+                </div>
+                <div class="chart-type control">
+                    <legend>Chart type</legend>
+                    <label for="line">Line</label>
+                    <input type="radio" id="line" name="chartType" value="line">
+                    <label for="bar">Bar</label>
+                    <input type="radio" id="bar" name="chartType" value="bar">
+                    <label for="candlestick">Candlestick</label>
+                    <input type="radio" id="candlestick" name="chartType" value="candlestick">
+                </div>
+                <div class="chart-time control">
+                    <legend>Time period</legend>
+                    <label for="oneMin">1m</label>
+                    <input type="radio" id="oneMin" name="chartTime" value="oneMin">
+                    <label for="fiveMin">5m</label>
+                    <input type="radio" id="fiveMin" name="chartTime" value="fiveMin">
+                    <label for="tenMin">10m</label>
+                    <input type="radio" id="tenMin" name="chartTime" value="tenMin">
+                    <label for="fifteenMin">15m</label>
+                    <input type="radio" id="fifteenMin" name="chartTime" value="fifteenMin">
+                    <label for="thirtyMin">30m</label>
+                    <input type="radio" id="thirtyMin" name="chartTime" value="thirtyMin">
+                    <label for="sixtyMin">60m</label>
+                    <input type="radio" id="sixtyMin" name="chartTime" value="sixtyMin">
+                    <label for="daily">D</label>
+                    <input type="radio" id="daily" name="chartTime" value="daily">
+                    <label for="weekly">W</label>
+                    <input type="radio" id="weekly" name="chartTime" value="weekly">
+                    <label for="monthly">M</label>
+                    <input type="radio" id="monthly" name="chartTime" value="monthly">
+                </div>
+                
+            </form>
 
         </div>
-        <div class="chart">
+        <div class="chart-container">
+            <div class="canvas">
+                <svg></svg>
             
+            </div>
         </div>
+        
 
     </main>
+    <footer>
+
+    </footer>
     <script src='app.js'></script>
 </body>
 </html>
