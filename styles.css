@@ -70,14 +70,19 @@ main {
 form {
     width: 100%;
     display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
     margin: 0;
 
 
 }
 
+.submit-button {
+    align-self: center;
+}
+
 .control {
+    margin: 0 20px;
 
 }
 

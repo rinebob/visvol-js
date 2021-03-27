@@ -14,9 +14,10 @@
     <main>
         <div class="toolbar">
             <form action="#" id="tickerForm">
+                <!-- <button class="submit-button control" id="submitButton">Submit</button> -->
                 <div class="ticker control">
                     <legend>Ticker symbol</legend>
-                    <input type="text" class="ticker form-control" name="ticker">
+                    <input type="text" class="ticker form-control" name="symbol" value="TSLA">
                 </div>
                 <div class="chart-type control">
                     <legend>Chart type</legend>
@@ -25,29 +26,38 @@
                     <label for="bar">Bar</label>
                     <input type="radio" id="bar" name="chartType" value="bar">
                     <label for="candlestick">Candlestick</label>
-                    <input type="radio" id="candlestick" name="chartType" value="candlestick">
+                    <input type="radio" id="candlestick" name="chartType" value="candlestick" checked>
                 </div>
                 <div class="chart-time control">
                     <legend>Time period</legend>
                     <label for="oneMin">1m</label>
-                    <input type="radio" id="oneMin" name="chartTime" value="oneMin">
+                    <input type="radio" id="oneMin" name="chartTime" value="1min" checked>
                     <label for="fiveMin">5m</label>
-                    <input type="radio" id="fiveMin" name="chartTime" value="fiveMin">
+                    <input type="radio" id="fiveMin" name="chartTime" value="5min">
                     <label for="tenMin">10m</label>
-                    <input type="radio" id="tenMin" name="chartTime" value="tenMin">
+                    <input type="radio" id="tenMin" name="chartTime" value="10min">
                     <label for="fifteenMin">15m</label>
-                    <input type="radio" id="fifteenMin" name="chartTime" value="fifteenMin">
+                    <input type="radio" id="fifteenMin" name="chartTime" value="15min">
                     <label for="thirtyMin">30m</label>
-                    <input type="radio" id="thirtyMin" name="chartTime" value="thirtyMin">
+                    <input type="radio" id="thirtyMin" name="chartTime" value="30min">
                     <label for="sixtyMin">60m</label>
-                    <input type="radio" id="sixtyMin" name="chartTime" value="sixtyMin">
+                    <input type="radio" id="sixtyMin" name="chartTime" value="60min">
                     <label for="daily">D</label>
-                    <input type="radio" id="daily" name="chartTime" value="daily">
+                    <input type="radio" id="daily" name="chartTime" value="DAILY">
                     <label for="weekly">W</label>
-                    <input type="radio" id="weekly" name="chartTime" value="weekly">
+                    <input type="radio" id="weekly" name="chartTime" value="WEEKLY">
                     <label for="monthly">M</label>
-                    <input type="radio" id="monthly" name="chartTime" value="monthly">
+                    <input type="radio" id="monthly" name="chartTime" value="MONTHLY">
                 </div>
+                <div class="data-amount control">
+                    <legend>Data amount</legend>
+                    <label for="all">All data</label>
+                    <input type="radio" id="full" name="dataAmount" value="full">
+                    <label for="recent">Recent</label>
+                    <input type="radio" id="compact" name="dataAmount" value="compact" checked>
+                </div>
+                <button class="submit-button control" id="submitButton">Submit</button>
+                
                 
             </form>
 
