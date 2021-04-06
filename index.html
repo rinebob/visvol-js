@@ -31,7 +31,7 @@
                 <div class="chart-time control">
                     <legend>Time period</legend>
                     <label for="oneMin">1m</label>
-                    <input type="radio" id="oneMin" name="chartTime" value="1min" checked>
+                    <input type="radio" id="oneMin" name="chartTime" value="1min">
                     <label for="fiveMin">5m</label>
                     <input type="radio" id="fiveMin" name="chartTime" value="5min">
                     <label for="tenMin">10m</label>
@@ -43,7 +43,7 @@
                     <label for="sixtyMin">60m</label>
                     <input type="radio" id="sixtyMin" name="chartTime" value="60min">
                     <label for="daily">D</label>
-                    <input type="radio" id="daily" name="chartTime" value="DAILY">
+                    <input type="radio" id="daily" name="chartTime" value="DAILY" checked>
                     <label for="weekly">W</label>
                     <input type="radio" id="weekly" name="chartTime" value="WEEKLY">
                     <label for="monthly">M</label>
@@ -55,6 +55,13 @@
                     <input type="radio" id="full" name="dataAmount" value="full">
                     <label for="recent">Recent</label>
                     <input type="radio" id="compact" name="dataAmount" value="compact" checked>
+                </div>
+                <div class="data-amount control">
+                    <legend>Data type</legend>
+                    <label for="json">json</label>
+                    <input type="radio" id="json" name="dataType" value="json" checked>
+                    <label for="csv">csv</label>
+                    <input type="radio" id="csv" name="dataType" value="csv">
                 </div>
                 <button class="submit-button control" id="submitButton">Submit</button>
                 
@@ -74,6 +81,7 @@
     <footer>
 
     </footer>
-    <script src='app.js'></script>
+    <script src='./app.js'></script>
+    <script type="module" src="./data.mjs"></script>
 </body>
 </html>
